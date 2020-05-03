@@ -111,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				2419DB8E245A794B0094CD48 /* Photo.swift */,
-				2457C19F245B2510003AC33D /* User.swift */,
 				248530C5245C67170093495F /* PhotoDB+CoreDataExtension.swift */,
+				2457C19F245B2510003AC33D /* User.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -120,10 +120,10 @@
 		24562C302459BE9500EA4CC2 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				24BDD1A4245F056D00B61806 /* Usage */,
 				248530B7245BEB1B0093495F /* collectionScreen */,
 				2419DB96245AC84E0094CD48 /* detailScreen */,
 				2419DB95245AC83B0094CD48 /* homeScreen */,
-				24562C392459DD5000EA4CC2 /* PinterestLayout.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -154,11 +154,9 @@
 		248530B7245BEB1B0093495F /* collectionScreen */ = {
 			isa = PBXGroup;
 			children = (
+				24BDD1A6245F05BA00B61806 /* Download */,
+				24BDD1A5245F05A800B61806 /* Favorite */,
 				248530B8245C0AF10093495F /* CollectionTabBarViewController.swift */,
-				248530BA245C0C8E0093495F /* DownloadCollectionViewController.swift */,
-				248530BC245C0CA20093495F /* FavoriteCollectionViewController.swift */,
-				248530BE245C1B1A0093495F /* FavoriteCollectionViewCell.swift */,
-				24575C6B245D7A4900F9FECB /* DownloadCollectionViewCell.swift */,
 			);
 			path = collectionScreen;
 			sourceTree = "<group>";
@@ -170,6 +168,32 @@
 				24575C6F245D86F800F9FECB /* DownloadService.swift */,
 			);
 			path = DataBase;
+			sourceTree = "<group>";
+		};
+		24BDD1A4245F056D00B61806 /* Usage */ = {
+			isa = PBXGroup;
+			children = (
+				24562C392459DD5000EA4CC2 /* PinterestLayout.swift */,
+			);
+			path = Usage;
+			sourceTree = "<group>";
+		};
+		24BDD1A5245F05A800B61806 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				248530BC245C0CA20093495F /* FavoriteCollectionViewController.swift */,
+				248530BE245C1B1A0093495F /* FavoriteCollectionViewCell.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		24BDD1A6245F05BA00B61806 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				248530BA245C0C8E0093495F /* DownloadCollectionViewController.swift */,
+				24575C6B245D7A4900F9FECB /* DownloadCollectionViewCell.swift */,
+			);
+			path = Download;
 			sourceTree = "<group>";
 		};
 		24F02749245881EB005F9BB5 = {

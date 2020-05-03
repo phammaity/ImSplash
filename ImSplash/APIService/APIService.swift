@@ -11,7 +11,7 @@ import Alamofire
 struct APIConstant {
     static let url = "https://api.unsplash.com"
     static let acceptVersion = "v1"
-    static let authorization = "Client-ID mbuwHbhnivpAh3xxrkZ0LBqBIAX1wx3kO6_t35_E9tM"
+    static let authorization = "Client-ID Wv0RsMRZcrJpkkSZF7OgadYOCL8xIm3ueUnSlLAlgVA"
 }
 
 class APIService: NSObject {
@@ -43,30 +43,6 @@ class APIService: NSObject {
                 return
             }
             callback(photos,nil)
-        }
-    }
-    
-    func getPhotoDetail(id:String, callback: @escaping (Photo?, Error?) -> ()) {
-        let fetchListPhotoUrl = "https://api.unsplash.com/photos/\(id)"
-        AF.request(fetchListPhotoUrl,method: .get, headers: self.headers)
-            .responseDecodable(of: Photo.self) { response in
-            switch response.result {
-            case .success:
-                print("Validation Successful")
-            case let .failure(error):
-                print(error)
-            }
-            if let error = response.error {
-                callback(nil,error)
-                return
-            }
-            
-            guard let photo = response.value else {
-                let error = NSError(domain:"data nil", code:0, userInfo:nil)
-                callback(nil,error)
-                return
-            }
-            callback(photo,nil)
         }
     }
     
